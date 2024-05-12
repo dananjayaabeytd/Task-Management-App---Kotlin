@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/add"
+    tools:context=".UpdateTaskActivity">
+
+    <TextView
+        android:id="@+id/editNoteHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="Edit Task Details"
+        android:textColor="@color/orange"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="73dp"
+        android:fontFamily="@font/poppins"
+        android:text="Select Priority"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/updatePrioritySpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editNoteHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/updateSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_done_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/editNoteHeading"
+        android:layout_marginEnd="6dp"/>
+
+    <EditText
+        android:id="@+id/UpdateTitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="@color/white"
+        android:hint="Enter the Title"
+        android:textColorHint="@color/white"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/updatePrioritySpinner"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins" />
+
+    <EditText
+        android:id="@+id/UpdateContentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:textColorHint="@color/white"
+        android:layout_below="@id/UpdateTitleEditText"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="top"
+        android:hint="Enter the description"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <!-- EditText for Deadline -->
+    <EditText
+        android:id="@+id/UpdateDeadlineEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColorHint="@color/white"
+        android:hint="Enter the Deadline"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/UpdateContentEditText"
+        android:layout_marginTop="12dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins" />
+
+    <!-- Button for selecting deadline -->
+    <Button
+        android:id="@+id/UpdateDeadlineButton"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UpdateDeadlineEditText"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins"
+        android:padding="12dp"
+        android:text="Select Deadline"
+        android:textSize="20sp" />
+
+</RelativeLayout>
